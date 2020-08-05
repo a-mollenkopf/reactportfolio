@@ -1,0 +1,27 @@
+.navbar {
+    color: rgb(255, 255, 255);
+    height: 100px;
+  }
+
+  #header {
+    background-color: #315475;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+  }
+
+  #navBtns {
+    font-size: 30px;
+    padding-right: 10px;
+  }
+
+  #aboutLink {
+    color: #396288;
+  }
+
+  #portfolioLink {
+    color: #396288;
+  }
+
+  #contactLink {
+    color: #396288;
+  }

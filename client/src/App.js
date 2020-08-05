@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Index from "./Containers/Index/Index";
 import Portfolio from "./Containers/Portfolio/Portfolio";
 import Contact from "./Containers/Contact/Contact";
+import Navbar from "./Containers/Navbar/Navbar";
 
 function App() {
   useEffect(() => {
@@ -18,10 +19,11 @@ function App() {
   }, []);
   return (
     <Router>
+      <Navbar />
       <Switch>
-        <Route exact path="/" component={Index}/>
-        <Route path="/portfolio" component={Portfolio}/>
-        <Route path="/contact" component={Contact}/>
+        <Route exact path="/" component={Index} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
       </Switch>
     </Router>
   );
